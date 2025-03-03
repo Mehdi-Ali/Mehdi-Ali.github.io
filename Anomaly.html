@@ -4,7 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project 1 - Details</title>
+    <title>Anomaly - Details</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -14,10 +19,78 @@
             background-color: #f4f4f4;
         }
 
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+        }
+
+        header p {
+            font-size: 18px;
+            margin: 5px 0;
+        }
+
         .container {
             width: 80%;
             margin: auto;
             padding: 20px;
+        }
+
+        .title {
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .subtitle {
+            font-size: 20px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .video-container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+
+        iframe {
+            width: 80%;
+            height: 400px;
+            border-radius: 8px;
+        }
+
+        .section {
+            background: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+
+        .section h2 {
+            text-align: center;
+        }
+
+        .section p {
+            text-align: justify;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            margin-top: 20px;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 10px;
+            margin-bottom: 10px;
         }
 
         .btn {
@@ -28,6 +101,7 @@
             border-radius: 5px;
             cursor: pointer;
             font-size: 16px;
+            margin: 5px;
             text-decoration: none;
             display: inline-block;
         }
@@ -35,25 +109,119 @@
         .btn:hover {
             background-color: #005f75;
         }
+
+        .social-links a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
     </style>
 </head>
 
 <body>
 
+    <header>
+        <h1>Mehdi Ali</h1>
+        <p>Unity Developer | Programmer</p>
+    </header>
+
     <div class="container">
-        <h1>Project 1</h1>
-        <p>Detailed description of Project 1.</p>
-        <img src="project1-image.jpg" alt="Project 1 Screenshot" width="80%">
+        <a href="index.html" class="btn">Home</a>
 
-        <h3>Features:</h3>
-        <ul>
-            <li>Feature 1</li>
-            <li>Feature 2</li>
-            <li>Feature 3</li>
-        </ul>
+        <h1 class="title">Anomaly</h1>
+        <p class="subtitle">Open World Multiplayer PvPvE VR Extraction Shooter</p>
 
-        <a href="index.html" class="btn">Back to Portfolio</a>
+        <div class="video-container">
+            <iframe width="1010" height="577" src="https://www.youtube.com/embed/WdGP48XHzlM"
+                title="Anomaly - Graphics Update Trailer" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+        <div class="section">
+            <h2>Project Description</h2>
+            <p>
+                Anomaly is a high-stakes PvPvE extraction shooter built for VR, where up to 12 players fight through a
+                disaster-stricken
+                city, battle unearthly creatures, and outsmart rival squads to secure valuable loot before extracting.
+                With deep weapon
+                customization, strategic decision-making, and intense multiplayer encounters, Anomaly delivers an
+                immersive and
+                adrenaline-fueled experience.
+            </p>
+            <p>
+                Developing Anomaly involved overcoming unique challenges in VR optimization, networking, and AI,
+                ensuring smooth
+                performance on mobile VR hardware while maintaining engaging, fast-paced gameplay.
+            </p>
+            <p style="text-align: center; margin-top: 15px;">
+                <a href="https://www.meta.com/experiences/anomaly/6281310371931100/#additional-contents"
+                    class="btn">Store Page</a>
+            </p>
+        </div>
+
+        <div class="section">
+            <h2>My Contributions</h2>
+            <p>
+                While working on Anomaly, I focused on key aspects of UI systems, AI behavior, and networking to enhance
+                the game’s
+                real-time multiplayer experience.
+            </p>
+            <ul>
+                <li><strong>UI & Backend:</strong> Designed and implemented modular UI components for scalability and
+                    reusability.
+                    Developed a style-sheet system to streamline design iteration and worked on core systems such as
+                    Vendor,
+                    Character Customization, and HUD. Led the localization effort for the entire project and resolved
+                    various
+                    UI-related bugs.</li>
+
+                <li><strong>AI Development:</strong> Implemented HTN-based AI behavior using
+                    fluid-hierarchical-task-network,
+                    improving enemy decision-making based on auditory and visual memory. Developed systems for enemy
+                    perception,
+                    target acquisition, aggro management, and state transitions, while fine-tuning behaviors and fixing
+                    AI-related
+                    bugs.</li>
+
+                <li><strong>Networking:</strong> Tackled networking-related challenges, including integrating PlayFab
+                    and ensuring
+                    seamless multiplayer synchronization with Photon Fusion.</li>
+
+                <li><strong>Art Integration:</strong> Integrated avatar models and hand poses to align with character
+                    customization
+                    and animations.</li>
+
+                <li><strong>World & Scene Management:</strong> Standardized open-world scene organization to improve
+                    collaboration
+                    between developers and artists. Optimized scene management by enabling area isolation, mesh
+                    combination, and art
+                    performance improvements.</li>
+            </ul>
+        </div>
+
+        <img src="images/anomaly-thumbnail-1.jpg" alt="Anomaly Project Image" width="100%"
+            style="border-radius: 8px; margin-bottom: 10px;">
+        <img src="images/anomaly-thumbnail-2.jpg" alt="Anomaly Project Image" width="100%"
+            style="border-radius: 8px; margin-bottom: 10px;">
+        <img src="images/anomaly-thumbnail-3.jpg" alt="Anomaly Project Image" width="100%"
+            style="border-radius: 8px; margin-bottom: 10px;">
+        <img src="images/anomaly-thumbnail-4.jpg" alt="Anomaly Project Image" width="100%"
+            style="border-radius: 8px; margin-bottom: 10px;">
+
+        <a href="index.html" class="btn">Home</a>
     </div>
+
+    <footer>
+        <p><a href="Resume/Mehdi Ali - Unity Developer Resume.pdf" style="color:white;">📄 Resume</a></p>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/mehdiali-dev/" style="color:white;">LinkedIn</a>
+            <a href="https://github.com/Mehdi-Ali" style="color:white;">GitHub</a>
+            <a href="https://www.upwork.com/freelancers/~011dc34883b864e570" style="color:white;">Upwork</a>
+            <a href="https://www.artstation.com/mehdi-ali" style="color:white;">ArtStation</a>
+        </div>
+        <p>alimehdi.offi@gmail.com</p>
+    </footer>
 
 </body>
 
